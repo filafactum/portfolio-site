@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="368" height="54" viewBox="0 0 368 54">
+  <defs>
+    <clipPath id="clip-logo-name">
+      <rect width="368" height="54"/>
+    </clipPath>
+  </defs>
+  <g id="logo-name" clip-path="url(#clip-logo-name)">
+    <text id="Annegret_Kerschis" data-name="Annegret Kerschis" transform="translate(0 8)" fill="#040404" font-size="30" font-family="Aquatico-Regular, Aquatico"><tspan x="12.775" y="31">Annegret Kerschis</tspan></text>
+  </g>
+</svg>

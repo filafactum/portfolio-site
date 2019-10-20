@@ -15,8 +15,8 @@
 <body>
 
   <header>
-    <div id="hero">
-      <img alt="Annegret Kerschis" src="img/logos/annegret-kerschis-logo@2x.svg">
+    <div class="container">
+      <img alt="Annegret Kerschis" src="img/logos/logo-name.svg">
       <nav>
         <ul>
           <li><a href="index.html">Work</a></li>
@@ -28,8 +28,8 @@
   </header>
 
   <main>
-    <div class="">
-      <div id="heading" class="">
+    <div id="hero">
+      <div class="container">
         <h1>Hi, my name is Anny.<span> I’m a designer based out of Stuttgart/Southern Germany.</span></h1>
         <p>
           Because I know good UX Design makes life easier for anyone, I strive to implement it whenever it’s possible
@@ -37,10 +37,10 @@
       </div>
     </div>
 
-    <div class="">
-      <div id="mywork" class="">
+    <div id="mywork">
+      <div class="container">
         <h2>My work</h2>
-        <div class="">
+        <div class="row">
           <div>
             <picture>
               <source srcset="img/loca_go/sign-up-0.png" media="(max-width:767px)">
@@ -60,19 +60,21 @@
         </div>
 
         <div class="">
-          <div>
-            <picture>
-              <source srcset="img/voxapp/voxapp-presentation-1.png" media="(max-width:767px)">
-              <img src="img/voxapp/voxapp-presentation-1@2x.png" alt="My Image">
-            </picture>
-          </div>
-          <div id="voxappstudy" class="container">
-            <h3>VOXAPP</h3>
-            <p>
-              As study project in a 4-week UX bootcamp at Career Foundry for learning the fundamentals of UX design,
-              I developed the digital concept for a vocabulary learning app.
-            </p>
-            <a href="voxapp.html" class="button">View project</a>
+          <div class="row">
+            <div>
+              <picture>
+                <source srcset="img/voxapp/voxapp-presentation-1.png" media="(max-width:767px)">
+                <img src="img/voxapp/voxapp-presentation-1@2x.png" alt="My Image">
+              </picture>
+            </div>
+            <div id="voxappstudy">
+              <h3>VOXAPP</h3>
+              <p>
+                As study project in a 4-week UX bootcamp at Career Foundry for learning the fundamentals of UX design,
+                I developed the digital concept for a vocabulary learning app.
+              </p>
+              <a href="voxapp.html" class="button">View project</a>
+            </div>
           </div>
         </div>
       </div>
@@ -80,7 +82,7 @@
   </main>
 
   <footer id="contact">
-    <div>
+    <div class="container">
       <h2>Get in touch</h2>
       <p>
         Do you like my work and want to discuss opportunities?
@@ -92,7 +94,7 @@
         <a href="mailto:annegret.kerschis@gmail.com" class="button contact">Email me</a>
       </div>
 
-          <div class="">
+      <div class="">
         <ul>
           <li><a href="https://www.linkedin.com/in/ankis/" target="_blank">
               <i class="fab fa-linkedin"></i></a></li>
@@ -101,13 +103,10 @@
           <li><a href="https://github.com/filafactum" target="_blank">
               <i class="fab fa-github-square"></i></a></li>
         </ul>
+        <p>
+          Copyright Annegret Kerschis 2019
+        </p>
       </div>
-
-
-      <div class="">
-        <p>Copyright Annegret Kerschis 2019</p>
-      </div>
-
     </div>
   </footer>
 
