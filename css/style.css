@@ -9,6 +9,8 @@ link hovering color (middle grey): #707070;
 brand color (teal): #30AB96;
 button color (light teal): #5BB1A2;
 */
+
+
 * {
   box-sizing: border-box;
 }
@@ -34,6 +36,9 @@ h1 {
 h2 {
   font-size: 2.25em;
   font-weight: 700;
+}
+#myworkheading {
+  text-align: center;
 }
 
 h3 {
@@ -84,13 +89,12 @@ a:active {
   border-radius: 2px;
   border-bottom: 1px solid #377E72;
   /* width of the border, type, color */
-  transition: 0.4s opacity;
+  transition: 0.2s opacity;
 }
 
 .button:hover {
   opacity: 0.8;
-  /* Reduces the opacity of the button to 80%   line für button hintun!*/
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .button.contact {
@@ -98,13 +102,13 @@ a:active {
   color: #07090f !important;
   text-transform: uppercase;
   border: 2px solid #5BB1A2;
-  transition: 0.4s opacity;
-}
+  transition: 0.2s; opacity;
+      }
 
 .button.contact:hover {
   background-color: #5BB1A2;
   color: #ffffff !important;
-}
+  }
 
 header {
   background-color: #79CCBE;
@@ -113,20 +117,19 @@ header {
   border-bottom: 3px solid #4a4a4a;
   position: fixed;
   width: 100%;
-  text-align: unset;
+  text-align: center;
   box-shadow: 0px 5px 12px 0px rgba(50, 50, 50, 0.75);
 }
 
 .logo {
   font-family: 'Fredericka the Great', cursive;
   color: #07090f !important;
-  font-size: 1.5em;
-  display: block;
+  font-size: 1.75em;
+  display: inline;
   max-width: 400px;
   padding-top: 0;
   text-align: center;
   text-decoration: none
-}
 }
 
 i {
@@ -135,6 +138,49 @@ i {
 
 img {
   width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(800px,50px);}
+}
+.cloud-front {
+  animation: 45s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(800px, 48px);}
+}
+.cloud-back {
+  animation: 50s cloud-move-reverse infinite alternate linear;
+}
+
+@keyframes hintergrundblau {
+  from {transform: translate(0,50px);}
+  to {transform: translate(800px,50px);}
+}
+.hintergrundblau {
+  animation: 45s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(800px, 48px);}
+}
+.cloud-back {
+  animation: 50s cloud-move-reverse infinite alternate linear;
 }
 
 footer {
@@ -142,7 +188,7 @@ footer {
 }
 
 main {
-  padding: 77px 0;
+  padding: 77px 0 0 0;
 }
 
 nav>ul>li {
@@ -154,12 +200,71 @@ nav>ul>li {
 }
 
 nav>ul>li>a {
+  font-family: "Julius Sans One";
   text-transform: uppercase;
   font-weight: 700;
-  color: #4a4a4a;
-  text-decoration: none
+  color: black;
+  text-decoration: none;
+  }
+.bordersout {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.bordersout * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.bordersout li {
+  display: inline;
+  list-style: outside none none;
+  margin: 0.5em 1.5em;
+  padding: 0;
+}
+.bordersout a {
+  padding: 0.4em 0;
+  color: black;
+  position: relative;
+  text-decoration: none;
+  display: inline;
+}
+.bordersout a:before {
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  opacity: 0;
+  top: 25%;
+  bottom: 25%;
+  left: 0;
+  right: 0;
+  border-top: 3px solid #34495e;
+  border-bottom: 3px solid #34495e;
+}
+.bordersout a:hover,
+.bordersout .current a {
+  color: #ffffff;
+}
+.bordersout a:hover:before,
+.bordersout .current a:before {
+  opacity: 1;
+  top: 0;
+  bottom: 0;
 }
 
+#social>ul>li {
+  list-style-type: none;
+  width: auto;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.social li{
+  display: inline;
+}
 /* Layout styling */
 .container {
   padding: 0 15px;
@@ -167,14 +272,19 @@ nav>ul>li>a {
 
 #hero {
   background-color: #ffe4c4;
-  padding: 20px 0;
+  padding: 5px 0;
   display: inline-block;
   width: 100%;
 }
 
 #hero h1 {
-  margin: 0 text-align: center;
+  margin: 0;
+  text-align: center;
   background-color: #ffe4c4;
+}
+
+#hero span {
+  display: block;
 }
 
 .logo {
@@ -187,7 +297,115 @@ nav>ul>li>a {
   color: #07090f;
 }
 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 #mywork .row {
   padding-bottom: 25px;
   border-bottom: 1px solid #4a4a4a;
 }
+
+[class*="col-"] {
+  float: left;
+  padding: 0 10px 0 10px;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  #skillsandtools h3 {
+    margin-top: 0;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+    position: relative;
+  }
+
+  #hero {
+    padding-top: 98px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  main {
+    padding-top: 130px;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {}
+
+body {
+  font-size: 18px;
+}
+
+.col-md-7 {
+  width: 58.33%;
+}
+
+.col-md-5 {
+  width: 41.66%;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  text-align: unset;
+  padding: 20px 0 20px;
+}
+
+#hero {
+  padding-top: 10px;
+}
+
+nav {
+  width: auto;
+  float: right;
+  margin-top: 4px;
+}
+
+main {
+  padding-top: 1px;
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {}
+
+/* Exercise 22.10.2019
+ISSUES:
+ - in the first media querie the header takes up more height, I have to set it to 130px. Why?
+- please look at the index page, the navigation and content disappears on the right side. Why?
+ - the logo is shown in 2 rows. Why?
+ - on the left, there is margin in the main section but not on the right, I set all sides to 0 except the top. Why?
+- on about and index page, the hero section touches the edges but not on project page. Why?
+- do I have to add the styling for larger sizes all over again?
+- on the project page, I tried to style 3 columns for the overview. Now they look messy. Is it best to do This
+in a table?
+- adding the transition works for the normal button but not for the contact button?
+Here I had to add it to the hover state?
