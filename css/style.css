@@ -9,8 +9,6 @@ link hovering color (middle grey): #707070;
 brand color (teal): #30AB96;
 button color (light teal): #5BB1A2;
 */
-
-
 * {
   box-sizing: border-box;
 }
@@ -22,7 +20,7 @@ body {
   line-height: 1.6;
   color: #07090f;
   font-family: 'Source Sans Pro', sans-serif;
-  display: inline-block;
+  display: block;
 }
 
 h1 {
@@ -37,6 +35,7 @@ h2 {
   font-size: 2.25em;
   font-weight: 700;
 }
+
 #myworkheading {
   text-align: center;
 }
@@ -54,26 +53,24 @@ h4 {
 a {
   color: #707070;
   /*This color doesn't apply     selbe Farbe wie a nehmen!*/
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:visited {
   /* visited link */
   color: #707070;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:hover {
   color: #707070;
-  text-decoration: underline;
-  }
-
-  /* Underlining when hovering over a link */
+  text-decoration: none;
 }
 
+/* Underlining when hovering over a link */
 a:focus {
-  color: #cc6540;
-  text-decoration: underline;
+  color: #707070;
+  text-decoration: none;
 }
 
 a:active {
@@ -96,7 +93,7 @@ a:active {
 
 .button:hover {
   opacity: 0.8;
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .button.contact {
@@ -104,22 +101,22 @@ a:active {
   color: #07090f !important;
   text-transform: uppercase;
   border: 2px solid #07090f;
-  transition: 0.2s; opacity;
-      }
+  transition: 0.2s;
+  opacity;
+}
 
 .button.contact:hover {
   background-color: #A4B786;
   color: #black !important;
-  }
+}
 
 header {
-  background-color: #A4B786;
+  background-color: #B3CFB3;
   padding: 10px 0;
   margin: 0;
   border-bottom: 2px solid #6B7757;
   position: fixed;
   width: 100%;
-  text-align: center;
   box-shadow: 0px 5px 12px 0px rgba(50, 50, 50, 0.75);
 }
 
@@ -145,58 +142,136 @@ img {
 }
 
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
 }
+
 .sun {
   animation: 4s color-change infinite alternate linear;
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(800px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(800px, 50px);
+  }
 }
+
 .cloud-front {
   animation: 45s cloud-move infinite alternate linear;
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(800px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(800px, 48px);
+  }
 }
+
 .cloud-back {
   animation: 50s cloud-move-reverse infinite alternate linear;
 }
 
-@keyframes hintergrundblau {
-  from {transform: translate(0,50px);}
-  to {transform: translate(800px,50px);}
-}
-.hintergrundblau {
-  animation: 45s cloud-move infinite alternate linear;
+@keyframes lilievonlinks {
+  from {
+    transform: scale(0.5, 0.5);
+  }
+
+  to {
+    transform: scale(50px, 50px);
+  }
 }
 
-@keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(800px, 48px);}
+.lilieoben {
+  animation: 5s lilievonlinks;
 }
-.cloud-back {
-  animation: 50s cloud-move-reverse infinite alternate linear;
+
+@keyframes lilievonrechts {
+  from {
+    transform: scale(0.5, 0.5);
+  }
+
+  to {
+    transform: scale(50px, 50px);
+  }
+}
+
+@keyframes lilienvonunten {
+  from {
+    transform: rotate(10);
+  }
+
+  to {
+    transform: rotate(100);
+  }
+}
+
+.lilienmitte {
+  animation: 5s lilienvonunten alternate ease-out;
+}
+
+@keyframes lilieunten {
+  from {
+    transform: scale(1px, 1px);
+  }
+
+  to {
+    transform: scale(50px, 50px);
+  }
+}
+
+.lilieunten {
+  animation: 5s lilieunten alternate linear;
 }
 
 footer {
   text-align: center;
 }
 
+.social {
+  list-style-type: none;
+  padding: 0;
+  margin: 30px 0 15px;
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
 main {
-  padding: 77px 0 0 0;
+  padding: 130px 0 0 0;
+}
+
+#mywork svg {
+  width: 100%;
+}
+
+nav {
+  text-align: center;
+}
+
+nav>ul {
+  padding: 0;
 }
 
 nav>ul>li {
   list-style-type: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
   display: inline;
   width: 100%;
 }
@@ -207,26 +282,30 @@ nav>ul>li>a {
   font-weight: 700;
   color: black;
   text-decoration: none;
+  margin: 0;
+}
 
-  }
 .bordersout {
   text-align: center;
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 1px;
 }
+
 .bordersout * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
 }
+
 .bordersout li {
   display: inline;
   list-style: outside none none;
   margin: 0.5em 1.5em;
   padding: 0;
 }
+
 .bordersout a {
   padding: 0.4em 0;
   color: black;
@@ -234,6 +313,7 @@ nav>ul>li>a {
   text-decoration: none;
   display: inline;
 }
+
 .bordersout a:before {
   position: absolute;
   content: '';
@@ -247,10 +327,12 @@ nav>ul>li>a {
   border-top: 2px solid #07090f;
   border-bottom: 2px solid #07090f;
 }
+
 .bordersout a:hover,
 .bordersout .current a {
   color: #ffffff;
 }
+
 .bordersout a:hover:before,
 .bordersout .current a:before {
   opacity: 1;
@@ -258,16 +340,15 @@ nav>ul>li>a {
   bottom: 0;
 }
 
-#social>ul>li {
+.social li {
+  display: inline;
   list-style-type: none;
   width: auto;
   align-items: center;
   margin-top: 4px;
+  padding: 0 20px 0 0;
 }
 
-.social li{
-  display: inline;
-}
 /* Layout styling */
 .container {
   padding: 0 15px;
@@ -275,7 +356,7 @@ nav>ul>li>a {
 
 #hero {
   background-color: #ffe4c4;
-  padding: 200px 0 0 0;
+  padding: 0;
   display: inline-block;
   width: 100%;
 }
@@ -342,9 +423,9 @@ Medium devices (640px and larger)
     padding-top: 98px;
   }
 
+
   nav {
     width: auto;
-    float: right;
     margin-top: 4px;
   }
 
@@ -377,8 +458,8 @@ body {
 }
 
 header {
-  text-align: unset;
-  padding: 20px 0 20px;
+  text-align: center;
+  padding: 20px 0;
 }
 
 #hero {
@@ -392,7 +473,7 @@ nav {
 }
 
 main {
-  padding-top: 1px;
+  padding-top: 100px;
 }
 
 /* ==============================
@@ -402,7 +483,7 @@ X-large devices (1440px or larger)
 
 /* Exercise 22.10.2019
 ISSUES:
- - in the first media querie the header takes up more height, I have to set it to 130px. Why?
+
 - please look at the index page, the navigation and content disappears on the right side. Why?
  - the logo is shown in 2 rows. Why?
  - on the left, there is margin in the main section but not on the right, I set all sides to 0 except the top. Why?
