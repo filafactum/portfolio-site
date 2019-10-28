@@ -261,7 +261,8 @@ main {
 }
 
 nav {
-  text-align: center;
+    width: auto;
+    text-align: center;
 }
 
 nav>ul {
@@ -274,7 +275,7 @@ nav>ul>li {
   padding: 0;
   display: inline-block;
   width: auto;
-}
+  }
 
 nav>ul>li>a {
   font-family: "Julius Sans One";
@@ -285,58 +286,9 @@ nav>ul>li>a {
   margin: 0.4em 0.4em;
   }
 
-.bordersout {
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 500;
-  letter-spacing: 1px;
-}
 
-.bordersout * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
-}
-
-.bordersout li {
-  display: inline-block;
-  list-style: outside none none;
+ul {
     padding: 0;
-}
-
-.bordersout a {
-  padding: 0.1em 0;
-  color: black;
-  position: relative;
-  text-decoration: none;
-  display: inline;
-}
-
-.bordersout a:before {
-  position: absolute;
-  content: '';
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
-  opacity: 0;
-  top: 25%;
-  bottom: 25%;
-  left: 0;
-  right: 0;
-  border-top: 2px solid #07090f;
-  border-bottom: 2px solid #07090f;
-}
-
-.bordersout a:hover,
-.bordersout .current a {
-  color: #ffffff;
-}
-
-.bordersout a:hover:before,
-.bordersout .current a:before {
-  opacity: 1;
-  top: 0;
-  bottom: 0;
 }
 
 .social li {
@@ -470,7 +422,6 @@ header {
 
 nav {
   width: auto;
-  float: right;
   margin-top: 0;
 }
 
