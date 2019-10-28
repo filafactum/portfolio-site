@@ -253,8 +253,8 @@ footer {
 }
 
 main {
-  padding: 130px 0 0 0;
-}
+  padding: 150px 0 0 0;
+  }
 
 #mywork svg {
   width: 100%;
@@ -282,6 +282,7 @@ nav>ul>li>a {
   font-weight: 700;
   color: black;
   text-decoration: none;
+  margin: 0.4em 0.4em;
   }
 
 .bordersout {
@@ -301,8 +302,7 @@ nav>ul>li>a {
 .bordersout li {
   display: inline-block;
   list-style: outside none none;
-  margin: 0.4em 0.4em;
-  padding: 0;
+    padding: 0;
 }
 
 .bordersout a {
@@ -338,6 +338,9 @@ nav>ul>li>a {
   top: 0;
   bottom: 0;
 }
+ul.bordersout {
+    padding: 0;
+}
 
 .social li {
   display: inline;
@@ -348,6 +351,9 @@ nav>ul>li>a {
   padding: 0 15px 0 0;
 }
 
+nav ul, ul.social {
+ padding: 0;
+}
 /* Layout styling */
 .container {
   padding: 0 15px;
@@ -429,7 +435,7 @@ Medium devices (640px and larger)
   }
 
   main {
-    padding-top: 130px;
+    padding-top: 200px;
   }
 }
 
@@ -471,9 +477,6 @@ nav {
   margin-top: 0;
 }
 
-main {
-  padding-top: 100px;
-}
 
 /* ==============================
 X-large devices (1440px or larger)
