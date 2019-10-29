@@ -25,8 +25,8 @@ body {
 
 h1 {
   font-family: 'Julius Sans One', serif;
-  line-height: 1em;
-  font-size: 2em;
+  line-height: 1.4em;
+  font-size: 1.6em;
   font-weight: 700;
   text-align: center;
 }
@@ -111,7 +111,7 @@ a:active {
 }
 
 header {
-  background-color: #B3CFB3;
+  background-color: #cad2c5;
   padding: 10px 0 0 0;
   margin: 0;
   border-bottom: 2px solid #6B7757;
@@ -253,7 +253,7 @@ footer {
 }
 
 main {
-  padding: 150px 0 0 0;
+  padding: 138px 0 0 0;
   }
 
 #mywork svg {
@@ -267,13 +267,14 @@ nav {
 
 nav>ul {
   padding: 0;
+  margin: 18px 0 0 0;
 }
 
 nav>ul>li {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: inline-block;
+  display: inline;
   width: auto;
   }
 
@@ -281,15 +282,11 @@ nav>ul>li>a {
   font-family: "Julius Sans One";
   text-transform: uppercase;
   font-weight: 700;
-  color: black;
+  color: #707070;
   text-decoration: none;
   margin: 0.4em 0.4em;
   }
 
-
-ul {
-    padding: 0;
-}
 
 .social li {
   display: inline;
@@ -300,7 +297,7 @@ ul {
   padding: 0 15px 0 0;
 }
 
-nav ul, ul.social {
+nav>ul, ul.social {
  padding: 0;
 }
 /* Layout styling */
@@ -310,7 +307,7 @@ nav ul, ul.social {
 
 #hero {
   background-color: #ffe4c4;
-  padding: 0;
+  padding: 40px 0;
   display: inline-block;
   width: 100%;
 }
@@ -348,7 +345,7 @@ nav ul, ul.social {
 
 [class*="col-"] {
   float: left;
-  padding: 0 10px 0 10px;
+  padding: 0;
 }
 
 /* ==============================
@@ -414,10 +411,6 @@ body {
 header {
   text-align: center;
   padding: 20px 0;
-}
-
-#hero {
-  padding-top: 10px;
 }
 
 nav {
