@@ -110,6 +110,11 @@ a:active {
   color: #black !important;
 }
 
+div.button.resume {
+  text-align: center;
+  text-transform: uppercase;
+}
+
 header {
   background-color: #cad2c5;
   padding: 10px 0 0 0;
@@ -254,15 +259,15 @@ footer {
 
 main {
   padding: 138px 0 0 0;
-  }
+}
 
 #mywork svg {
   width: 100%;
 }
 
 nav {
-    width: auto;
-    text-align: center;
+  width: auto;
+  text-align: center;
 }
 
 nav>ul {
@@ -276,17 +281,16 @@ nav>ul>li {
   padding: 0;
   display: inline;
   width: auto;
-  }
+}
 
 nav>ul>li>a {
   font-family: "Julius Sans One";
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: bold;
   color: #707070;
   text-decoration: none;
   margin: 0.4em 0.4em;
-  }
-
+}
 
 .social li {
   display: inline;
@@ -298,8 +302,9 @@ nav>ul>li>a {
 }
 
 nav>ul, ul.social {
- padding: 0;
+  padding: 0;
 }
+
 /* Layout styling */
 .container {
   padding: 0 15px;
@@ -345,7 +350,7 @@ nav>ul, ul.social {
 
 [class*="col-"] {
   float: left;
-  padding: 0;
+  padding: 10px;
 }
 
 /* ==============================
@@ -368,20 +373,36 @@ Medium devices (640px and larger)
     text-align: unset;
     padding: 20px 0 13px;
     position: relative;
+    overflow: hidden;
   }
 
-  #hero {
-    padding-top: 98px;
-  }
-
-
-  nav {
-    width: auto;
+  h3 {
     margin-top: 0;
   }
 
+  #hero {
+    padding-top: 20px;
+  }
+
+  .logo {
+    float: left;
+    position: relative;
+    font-size: 1.75em;
+    max-width: 300px;
+  }
+
+  nav {
+    float: right;
+    width: auto;
+    margin-top: 4px;
+  }
+
+  span {
+    padding: 0 0 20px 0;
+  }
+
   main {
-    padding-top: 200px;
+    padding-top: 0;
   }
 }
 
@@ -413,26 +434,72 @@ header {
   padding: 20px 0;
 }
 
+#hero {
+  padding: 20px 0 0 0;
+}
 nav {
   width: auto;
   margin-top: 0;
 }
 
+span {
+  text-align: center;
+}
+
+.row {
+  max-width: 1200px;
+  text-align: center;
+}
+.bordersout {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.bordersout * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.bordersout li {
+  display: inline;
+  list-style: outside none none;
+  margin: 0.5em 1.5em;
+  padding: 0;
+}
+.bordersout a {
+  padding: 0.4em 0;
+  color: black;
+  position: relative;
+  text-decoration: none;
+  display: inline;
+}
+.bordersout a:before {
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  opacity: 0;
+  top: 25%;
+  bottom: 25%;
+  left: 0;
+  right: 0;
+  border-top: 2px solid #07090f;
+  border-bottom: 2px solid #07090f;
+}
+.bordersout a:hover,
+.bordersout .current a {
+  color: #ffffff;
+}
+.bordersout a:hover:before,
+.bordersout .current a:before {
+  opacity: 1;
+  top: 0;
+  bottom: 0;
+}
 
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {}
-
-/* Exercise 22.10.2019
-ISSUES:
-
-- please look at the index page, the navigation and content disappears on the right side. Why?
- - the logo is shown in 2 rows. Why?
- - on the left, there is margin in the main section but not on the right, I set all sides to 0 except the top. Why?
-- on about and index page, the hero section touches the edges but not on project page. Why?
-- do I have to add the styling for larger sizes all over again?
-- on the project page, I tried to style 3 columns for the overview. Now they look messy. Is it best to do This
-in a table?
-- adding the transition works for the normal button but not for the contact button?
-Here I had to add it to the hover state?
