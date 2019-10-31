@@ -415,14 +415,16 @@ body {
   font-size: 18px;
 }
 
-.col-md-7 {
+.col-lg-7 {
   width: 58.33%;
 }
 
-.col-md-5 {
+.col-lg-5 {
   width: 41.66%;
-}
 
+.col-lg-4 {
+  width: 33.33%
+}
 .container {
   max-width: 1200px;
   margin-left: auto;
@@ -448,7 +450,11 @@ span {
 
 .row {
   max-width: 1200px;
-  text-align: center;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: none;
 }
 .bordersout {
   text-align: center;
