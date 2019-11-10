@@ -32,7 +32,7 @@ header {
   position: fixed;
   width: 100%;
   box-shadow: 0px 5px 12px 0px rgba(50, 50, 50, 0.75);
-}
+  }
 
 main {
   padding-top: 85px;
@@ -142,14 +142,9 @@ a:active {
 }
 
 .logo {
-  font-family: 'Montserrat', cursive;
-  color: #07090f !important;
-  font-size: 2em;
-  font-weight: 300;
-  text-transform: uppercase;
-  max-width: 150px;
+    color: #07090f !important;
+    max-width: 50px;
   padding-top: 0;
-  text-decoration: none;
 }
 
 i {
@@ -306,7 +301,7 @@ nav>ul, ul.social {
 
 #hero {
   background-color: #e85a4f;
-  padding: 40px 0 20px 0;
+  padding: 20px 0 20px 0;
   display: inline-block;
   text-transform: uppercase;
   width: 100%;
@@ -423,9 +418,7 @@ Medium devices (640px and larger)
   .logo {
     float: left;
     position: relative;
-    font-size: 1.75em;
-    min-width: 641px;
-  }
+      }
 
   nav {
     float: right;
