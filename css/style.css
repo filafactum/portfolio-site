@@ -144,7 +144,6 @@ a:active {
 img.logo {
         max-width: 50px;
   padding-top: 0;
-  float: left;
 }
 
 i {
@@ -232,6 +231,7 @@ img {
   width: 100%;
 }
 
+
 nav>ul {
   padding: 0;
   margin: 0;
@@ -287,7 +287,7 @@ nav>ul, ul.social {
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255, 127, 80, 0.5);
+  border-top: 1px solid #07090f;
 }
 
 .navtoggle.responsive li:last-child {
@@ -456,7 +456,7 @@ Medium devices (640px and larger)
     float: right;
     width: auto;
     margin-top: 4px;
-  }
+      }
 
   nav>ul {
     margin: 1em 0;
