@@ -18,27 +18,13 @@
     <div class="container">
       <div class="navtoggle" id="myNavtoggle">
         <a href="index.html">
-        <svg class=logo xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 257 272">
-          <defs>
-            <clipPath id="b">
-              <rect width="257" height="272" />
-            </clipPath>
-          </defs>
-          <g id="a" clip-path="url(#b)">
-            <path d="M82.5,0C128.063,0,165,38.056,165,85s-36.937,85-82.5,85S0,131.944,0,85,36.937,0,82.5,0Z" transform="translate(90 64)" fill="#30ab96" opacity="0.8" />
-            <path d="M44.171-93.485,149.653,115.381-1.721,193.2Z" transform="matrix(0.891, 0.454, -0.454, 0.891, 94.611, 63.735)" fill="#e8e5e5" opacity="0.52" />
-            <line y1="232" x2="169" transform="translate(5.5 2.5)" fill="none" stroke="#040404" stroke-linecap="square" stroke-width="3" />
-            <line y1="267" transform="translate(175.5 0.5)" fill="none" stroke="#040404" stroke-width="3" />
-            <path d="M116.341,3.028C88.6-14.757,1.241-1.986,1.241,80.322s84.753,98.489,118.416,76.248" transform="translate(89.5 68.5)" fill="none" stroke="#040404" stroke-width="3" />
-          </g>
-          <a href="index.html"></a>
-        </svg>
-        </a>
+                    <img src="img/logos/Logo.png" class="logo" alt="my logo">
+                          </a>
         <nav>
           <ul class="bordersout">
             <li><a href="index.html">work</a></li>
             <li><a href="about.html">about</a></li>
-            <li><a href="#contact">contact</a></li>
+            <li><a href="#contact" onclick="menuToggle()">contact</a></li>
             <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
           </ul>
         </nav>
@@ -50,9 +36,9 @@
   <main>
     <div id="hero">
       <div class="container">
-        <h1>Hello.</h1>
+        <h1>Hello, I'm Anny</h1>
         <p>
-          My name is Annegret Kerschis: chocolate lover and visual enthusiast. I live in beautiful southern Germany.
+          VIsual enthusiast and chocolate lover. I live in beautiful southern Germany.
           <br>And I think investing in UX makes the best product even better.</br>
         </p>
       </div>
@@ -64,8 +50,8 @@
         <div class="row">
           <div class="col-md-6 col-lg-7">
             <picture>
-              <source srcset="img/loca_go/locago-intro.jpg" media="(max-width:767px)">
-              <img src="img/loca_go/locago-intro@2x.jpg" alt="My Image">
+              <source srcset="img/loca_go/locago-intro.jpg." media="(max-width:767px)">
+              <img src="img/loca_go/locago-intro@2x.jpg" alt="locago image">
             </picture>
           </div>
           <div id="loca-gostudy" class="col-md-6 col-lg-5">
@@ -81,7 +67,7 @@
           <div class="col-md-6 col-lg-7">
             <picture>
               <source srcset="img/voxapp/voxapp-overview-2.png" media="(max-width:767px)">
-              <img src="img/voxapp/voxapp-overview-2@2x.png" alt="My Image">
+              <img src="img/voxapp/voxapp-overview-2@2x.png" alt="voxapp image">
             </picture>
           </div>
           <div id="voxappstudy" class="col-md-6 col-lg-5">
@@ -1054,6 +1040,8 @@
             <p>This is a little example which shows some sorts of transitions and animations.</p>
           </div>
         </div>
+        <div>
+          <a id="button-top" class="button show"></a>
       </div>
     </div>
     </div>
