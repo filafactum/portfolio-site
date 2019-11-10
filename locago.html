@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500|Open+Sans:400,700|PT+Serif:400i&display=swap" rel="stylesheet">
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
   <script src="https://kit.fontawesome.com/91297015c4.js" crossorigin="anonymous"></script>
 </head>
 
@@ -18,27 +19,13 @@
     <div class="container">
       <div class="navtoggle" id="myNavtoggle">
         <a href="index.html">
-        <svg class=logo xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 257 272">
-          <defs>
-            <clipPath id="b">
-              <rect width="257" height="272" />
-            </clipPath>
-          </defs>
-          <g id="a" clip-path="url(#b)">
-            <path d="M82.5,0C128.063,0,165,38.056,165,85s-36.937,85-82.5,85S0,131.944,0,85,36.937,0,82.5,0Z" transform="translate(90 64)" fill="#30ab96" opacity="0.8" />
-            <path d="M44.171-93.485,149.653,115.381-1.721,193.2Z" transform="matrix(0.891, 0.454, -0.454, 0.891, 94.611, 63.735)" fill="#e8e5e5" opacity="0.52" />
-            <line y1="232" x2="169" transform="translate(5.5 2.5)" fill="none" stroke="#040404" stroke-linecap="square" stroke-width="3" />
-            <line y1="267" transform="translate(175.5 0.5)" fill="none" stroke="#040404" stroke-width="3" />
-            <path d="M116.341,3.028C88.6-14.757,1.241-1.986,1.241,80.322s84.753,98.489,118.416,76.248" transform="translate(89.5 68.5)" fill="none" stroke="#040404" stroke-width="3" />
-          </g>
-          <a href="index.html"></a>
-        </svg>
+        <img src="img/logos/Logo.png" class="logo" alt="my logo">
         </a>
       <nav>
         <ul class="bordersout">
           <li><a href="index.html">work</a></li>
           <li><a href="about.html">about</a></li>
-          <li><a href="#contact">contact</a></li>
+          <li><a href="#contact" onclick="menuToggle()">contact</a></li>
           <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
@@ -65,7 +52,7 @@
   <div class="container"
     <div class="row">
       <div class="col-md-4" "col-lg-4">
-        <h3>01 Discovery</h3>
+        <a href="#discovery"><h3>01 Discovery</h3></a>
         <ul>
           <li>Competitor Analysis</li>
           <li>Audience definition</li>
@@ -75,7 +62,7 @@
       </div><!--column 1-->
 
       <div class="col-md-4" "col-lg-4">
-        <h3>02 Concepting</h3>
+      <a href="#concepting"><h3>02 Concepting</h3></a>
               <ul>
           <li>Process Flows</li>
           <li>Sitemap</li>
@@ -85,7 +72,7 @@
       </div>
 
       <div class="col-md-4" "col-lg-4">
-        <h3>03 Prototyping & Testing</h3>
+         <a href="#prototypingandtesting"><h3>03 Prototyping & Testing</h3></a>
         <ul>
           <li>Prototyping</li>
           <li>User Testing</li>
@@ -360,11 +347,12 @@
 
           <h3>Timeline</h3>
           <p>Feb. '19 - Sep. '19</p>
-        </div>
-        <!--inner wrapper-->
+        </div>        <!--inner wrapper-->
       </div>
       <!--id skillsandtools-->
-
+      <div>
+        <a id="button-top" class="button show"></a>
+      </div>
     </div>
   </main>
 
