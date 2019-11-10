@@ -35,7 +35,7 @@ header {
   }
 
 main {
-  padding-top: 85px;
+  padding-top: 75px;
 }
 
 footer {
@@ -141,10 +141,10 @@ a:active {
   padding: 20px 0 0 0;
 }
 
-.logo {
-    color: #07090f !important;
-    max-width: 50px;
+img.logo {
+        max-width: 50px;
   padding-top: 0;
+  float: left;
 }
 
 i {
@@ -234,7 +234,7 @@ img {
 
 nav>ul {
   padding: 0;
-  margin: 18px 0 0 0;
+  margin: 0;
 }
 
 nav>ul>li {
@@ -376,6 +376,38 @@ nav>ul, ul.social {
   border-bottom: 1px solid #8e8d8a;
 }
 
+#button-top {
+  display: inline-block;
+  text-align: center;
+  background-color: #c98074;
+    width: 66px;
+  height: 46px;
+  position: fixed;
+    bottom: 15px;
+  right: 15px;
+  padding: 0 4px 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+}
+
+#button-top::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.75em;
+  line-height: 50px;
+}
+
+#button-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#button-top:hover {
+  cursor: pointer;
+}
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -518,6 +550,10 @@ Large devices (1024px or larger)
     #hero {
       padding: 20px 0 20px 0;
     }
+
+    img.logo {
+            max-width: 70px;
+}
 
     nav {
       width: auto;
