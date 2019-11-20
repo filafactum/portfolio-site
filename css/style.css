@@ -8,6 +8,10 @@ secondary background color (light-grey): #ece8ef;
 link hovering color (middle grey): #707070;
 brand color (teal): #30AB96;
 button color (light teal): #5BB1A2;
+12.11. hellgrau #E3E3E3 oder e2dddd
+noch helleres grau #F6F6F8
+rot#C60021 #FA2742
+schwarz #373833
 */
 /* GENERAL=================
 ========================*/
@@ -16,7 +20,7 @@ button color (light teal): #5BB1A2;
 }
 
 body {
-  background-color: #eae7dc;
+  background-color: #F6F6F8;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.6;
@@ -25,7 +29,7 @@ body {
 }
 
 header {
-  background-color: #d8c3a5;
+  background-color: #e2dddd;
   padding: 10px 0 4px 0;
   margin: 0;
   border-bottom: 2px solid #8e8d8a;
@@ -49,12 +53,13 @@ h1, h2, h3 h4 {
 
 h1 {
   font-family: 'Montserrat', sans-serif;
-  color: #d8c3a5;
+  color: #F6F6F8;
   line-height: 1.4em;
   font-size: 2em;
   font-weight: 500;
   text-align: center;
 }
+
 
 h2 {
   font-size: 1.75em;
@@ -75,7 +80,6 @@ h4 {
 
 a {
   color: #e98074;
-  /*This color doesn't apply     selbe Farbe wie a nehmen!*/
   text-decoration: none;
 }
 
@@ -86,13 +90,13 @@ a:visited {
 }
 
 a:hover {
-  color: #707070;
+  color: #e98074;
   text-decoration: none;
 }
 
 /* Underlining when hovering over a link */
 a:focus {
-  color: #707070;
+  color: #e98074;
   text-decoration: none;
 }
 
@@ -106,17 +110,16 @@ a:active {
 .button {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #e98074;
-  color: #07090f !important;
+  background-color: #C60021;
+  color: #F6F6F8 !important;
   text-transform: uppercase;
   font-weight: 500;
-  /* needed to override the default link color */
   padding: 10px 20px;
   border-radius: 30px;
   border-bottom: 1px solid #e85a4f;
   box-shadow: 0px 5px 8px 0px rgba(50, 50, 50, 0.75);
   /* width of the border, type, color */
-  transition: 0.2s opacity;
+  transition: 0.4s opacity;
 }
 
 .button:hover {
@@ -128,12 +131,14 @@ a:active {
   background-color: transparent;
   color: #07090f !important;
   text-transform: uppercase;
-  border: 2px solid #e85a4f;
+  border: 2px solid #C60021;
 }
 
 .button.contact:hover {
   background-color: #e85a4f;
   color: #eae7dc !important;
+  opacity: 1;
+    transition: all 0.3s;
 }
 
 .center {
@@ -156,13 +161,15 @@ img {
 
 .about img {
   max-width: 800px;
-  margin-top: 40px;
-}
+  }
 
 .about {
   text-align: center;
 }
 
+
+
+/*animation*/
 @keyframes color-change {
   0% {
     fill: #edc655;
@@ -178,7 +185,7 @@ img {
 }
 
 .sun {
-  animation: 4s color-change infinite alternate linear;
+  animation: 8s color-change infinite alternate linear;
 }
 
 @keyframes cloud-move {
@@ -247,7 +254,7 @@ nav>ul>li>a {
   font-family: "Montserrat";
   text-transform: uppercase;
   font-weight: 700;
-  color: #e85a4f !important;
+  color: #C60021 !important;
   text-decoration: none;
   margin: 0.4em;
 }
@@ -300,19 +307,19 @@ nav>ul, ul.social {
 }
 
 #hero {
-  background-color: #e85a4f;
+  background-color: #C60021;
   padding: 20px 0 20px 0;
   display: inline-block;
   text-transform: uppercase;
   width: 100%;
   text-align: center;
   font-family: 'PT Serif', serif;
-  color: #d8c3a5;
+  color: #F6F6F8;
 }
 
 #hero h1 {
   margin: 0;
-  background-color: #e85a4f;
+  background-color: #C60021;
 }
 
 #hero span {
@@ -324,7 +331,7 @@ nav>ul, ul.social {
 }
 
 #herovoxapp {
-  background-color: #e85a4f;
+  background-color: #C60021;
   padding: 40px 0 20px 0;
   text-align: center;
   font-family: 'PT Serif', serif;
@@ -340,7 +347,7 @@ nav>ul, ul.social {
 }
 
 #herolocago {
-  background-color: #e85a4f;
+  background-color: #C60021;
   padding: 40px 0 20px 0;
   text-align: center;
   font-family: 'PT Serif', serif;
@@ -357,13 +364,12 @@ nav>ul, ul.social {
 
 #heroabout {
   background-color: #e98074;
-  padding: 10px 0 20px 0;
   text-transform: uppercase;
 }
 
 #heroabout h1 {
   padding: 0;
-  margin: 10px 0 0 0;
+  margin: 0;
 }
 
 .row {
@@ -379,7 +385,8 @@ nav>ul, ul.social {
 #button-top {
   display: inline-block;
   text-align: center;
-  background-color: #c98074;
+  background-color: #C60021;
+  opacity: 20;
     width: 66px;
   height: 46px;
   position: fixed;
@@ -387,8 +394,7 @@ nav>ul, ul.social {
   right: 15px;
   padding: 0 4px 4px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  visibility: hidden;
+    visibility: hidden;
 }
 
 #button-top::after {
@@ -401,7 +407,7 @@ nav>ul, ul.social {
 }
 
 #button-top.show {
-  opacity: 1;
+  opacity: 20;
   visibility: visible;
 }
 
@@ -545,9 +551,7 @@ Large devices (1024px or larger)
       margin: 0 auto;
     }
 
-    #aboutdetails {}
-
-    #hero {
+      #hero {
       padding: 20px 0 20px 0;
     }
 
