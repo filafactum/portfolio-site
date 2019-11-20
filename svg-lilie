@@ -104,3 +104,25 @@
 .lilieunten {
   animation: 5s lilieunten alternate linear;
 }
+
+/*blockquotes*/
+    <blockquote "&bdquo;"></blockquote>
+blockquote::before, blockquote::after {
+  position: absolute;
+  display: block;
+  font-size: 20em;
+  color: #F6F6F8;
+  opacity: 0.2;
+}
+
+blockquote::before {
+  content: '„';
+  left: 0.25em;
+  top: -0.4em;
+}
+
+blockquote::after {
+  content: '“';
+  top: 0.2em;
+  right: 0.25em;
+}
