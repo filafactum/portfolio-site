@@ -6,10 +6,9 @@
   <title>UX/UI Designer Annegret Kerschis Aalen</title>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500|Open+Sans:400,700|PT+Serif:400i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500;Open+Sans:400,700;PT+Serif:400i&display=swap" rel="stylesheet">
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
   <script src="https://kit.fontawesome.com/91297015c4.js" crossorigin="anonymous"></script>
 </head>
 
@@ -19,25 +18,25 @@
     <div class="container">
       <div class="navtoggle" id="myNavtoggle">
         <a href="index.html">
-        <img src="img/logos/Logo.png" class="logo" alt="my logo">
+          <img src="img/logos/Logo.png" class="logo" alt="my logo">
         </a>
-      <nav>
-        <ul class="bordersout">
-          <li><a href="index.html">work</a></li>
-          <li><a href="about.html">about</a></li>
-          <li><a href="#contact" onclick="menuToggle()">contact</a></li>
-          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-        </ul>
-      </nav>
-    </div><!--navtoggle-->
+        <nav>
+          <ul class="bordersout">
+            <li><a href="index.html">work</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="#contact" onclick="menuToggle()">contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+      <!--navtoggle-->
     </div>
   </header>
 
   <main>
-
-    <div>
+    <div id="locago">
       <div id="herolocago">
-        <h1>FULL CASE STUDY For LOCA-GO<br>- a scavenger hunt app -</br></h1>
+        <h1>FULL CASE STUDY For LOCA-GO<br>- a scavenger hunt app -</h1>
       </div>
       <div class="container">
         <h2>Overview</h2>
@@ -48,41 +47,52 @@
           tours matching their personal preferences regarding topics, time and scope.
         </p>
       </div>
+
+    <div id="intro">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <a href="#discovery">
+              <h3>01 Discovery</h3>
+            </a>
+            <ul>
+              <li>Competitor Analysis</li>
+              <li>Audience definition</li>
+              <li>User Scenario</li>
+              <li>Content Survey</li>
+            </ul>
+          </div>
+          <!--column 1-->
+
+          <div class="col-md-4">
+            <a href="#concepting">
+              <h3>02 Concepting</h3>
+            </a>
+            <ul>
+              <li>Process Flows</li>
+              <li>Sitemap</li>
+              <li>Wireframes</li>
+              <li>Design</li>
+            </ul>
+          </div>
+
+          <div class="col-md-4">
+            <a href="#prototypingandtesting">
+              <h3>03 Prototyping & Testing</h3>
+            </a>
+            <ul>
+              <li>Prototyping</li>
+              <li>User Testing</li>
+              <li>Review</li>
+              <li>Iteration</li>
+            </ul>
+          </div>
+        </div>
+        <!--row-->
+      </div>
+      <!--container-->
     </div>
-
-<div id="intro">
-  <div class="container"
-    <div class="row">
-      <div class="col-md-4" "col-lg-4">
-        <a href="#discovery"><h3>01 Discovery</h3></a>
-        <ul>
-          <li>Competitor Analysis</li>
-          <li>Audience definition</li>
-          <li>User Scenario</li>
-          <li>Content Survey</li>
-        </ul>
-      </div><!--column 1-->
-
-      <div class="col-md-4" "col-lg-4">
-      <a href="#concepting"><h3>02 Concepting</h3></a>
-              <ul>
-          <li>Process Flows</li>
-          <li>Sitemap</li>
-          <li>Wireframes</li>
-          <li>Design</li>
-        </ul>
-      </div>
-
-      <div class="col-md-4" "col-lg-4">
-         <a href="#prototypingandtesting"><h3>03 Prototyping & Testing</h3></a>
-        <ul>
-          <li>Prototyping</li>
-          <li>User Testing</li>
-          <li>Review</li>
-          <li>Iteration</li>
-        </ul>
-      </div>
-    </div><!--row-->
+    <!--intro-->
 
 
     <div id="discovery">
@@ -139,7 +149,7 @@
           Affinity maps helped define the needs, goals and pain points of my interviewees.
         </p>
 
-        <div class="">
+        <div class="container">
           <h3>Understanding the problem</h3>
           <h4>Motivation</h4>
           <ul>
@@ -157,7 +167,7 @@
           </ul>
         </div>
 
-        <div class="">
+        <div class="container">
           <h3>Key insights</h3>
           <h4>Filter options</h4>
           <p>
@@ -193,16 +203,13 @@
             access to paid tour providers.
           </p>
         </div>
-
-        <div class="">
-          <picture>
-            <source srcset="img/loca_go/user-persona-jule.png" media="(max-width:767px)">
-            <img src="img/loca_go/user-persona-jule@2x.png" alt="user persona 1">
-          </picture>
-          <p>
-            Example user persona "Jule" derived through analysis of the data from surveys and research.
-          </p>
-        </div>
+        <picture>
+          <source srcset="img/loca_go/user-persona-jule.png" media="(max-width:767px)">
+          <img src="img/loca_go/user-persona-jule@2x.png" alt="user persona 1">
+        </picture>
+        <p>
+          Example user persona "Jule" derived through analysis of the data from surveys and research.
+        </p>
       </div>
 
       <div id="concepting">
@@ -229,23 +236,23 @@
           </p>
         </div>
 
-<div class="container">
+        <div class="container">
           <div class="row">
-          <h3>User journey map / User flow</h3>
-          <div class="col-md-6">
-            <picture>
-              <source srcset="img/loca_go/user-journey.png" media="(max-width:767px)">
-              <img src="img/loca_go/user-journey@2x.png" alt="user journey">
-            </picture>
-          </div>
-          <div class="col-md-6">
-            <picture>
-              <source srcset="img/loca_go/user-flow.png" media="(max-width:767px)">
-              <img src="img/loca_go/user-flow@2x.png" alt="user flow">
-            </picture>
+            <h3>User journey map / User flow</h3>
+            <div class="col-md-6">
+              <picture>
+                <source srcset="img/loca_go/user-journey.png" media="(max-width:767px)">
+                <img src="img/loca_go/user-journey@2x.png" alt="user journey">
+              </picture>
+            </div>
+            <div class="col-md-6">
+              <picture>
+                <source srcset="img/loca_go/user-flow.png" media="(max-width:767px)">
+                <img src="img/loca_go/user-flow@2x.png" alt="user flow">
+              </picture>
+            </div>
           </div>
         </div>
-</div>
 
         <div class="container">
           <h3>Validating sitemap through testing</h3>
@@ -281,30 +288,41 @@
           </picture>
         </div>
 
-        <div id="prototypingandtesting" class="container">
-          <h2>03 Prototyping & Testing</h2>
-          <p>
-            The prototype was ready to be tested!
-          </p>
-          <p>
-            I conducted moderated user tests with five participants to determine the
-            overall usability and design. The testing went overall good and no
-            catatrophes were discovered. The ranking of issues took place according
-            to Jakob Nielsens scale of errors. All results from testing were gathered
-            and classified in an affinity map and a rainbow spreadsheet.
-          </p>
-          <p>
-            Armed with the new insights from testing, I took on another round of
-            iterating the prototype. To accomplish a prototype which not only shows
-            the revised screens but also usability standards, I included a range of
-            Gestalt Principles the design principles defined by Google
-            (functionality and visual clarity )and WCAG guidelines (accessability)
-            found their way into my work as well. The revised prototype went
-            into testing with fellow designers from Slack. For making it easier to
-            absolve future iterations and developing the app, I installed a
-            Design Language System.
-          </p>
-          <h1>HERE NEEDS TO BE MORE CONTENT!</h1>
+        <div id="prototypingandtesting">
+          <div class="container">
+            <h2>03 Prototyping & Testing</h2>
+            <p>
+              The prototype was ready to be tested!
+            </p>
+            <p>
+              I conducted moderated user tests with five participants to determine the
+              overall usability and design. The testing went overall good and no
+              catatrophes were discovered. The ranking of issues took place according
+              to Jakob Nielsens scale of errors. All results from testing were gathered
+              and classified in an affinity map and a rainbow spreadsheet.
+            </p>
+            <p>
+              Armed with the new insights from testing, I took on another round of
+              iterating the prototype. To accomplish a prototype which not only shows
+              the revised screens but also usability standards, I included a range of
+              Gestalt Principles the design principles defined by Google
+              (functionality and visual clarity )and WCAG guidelines (accessability)
+              found their way into my work as well. The revised prototype went
+              into testing with fellow designers from Slack. For making it easier to
+              absolve future iterations and developing the app, I installed a
+              Design Language System.
+            </p>
+          </div>
+          <div id="prototype">
+            <div class="container">
+              <h2>High fidelity prototype</h2>
+              <a href="https://invis.io/ZQTZ9JJP7RJ" target="_blank" class="button">click to view prototype</a>
+              <picture>
+                <source srcset="img/loca_go/locago-intro.jpg" media="(max-width:767px)">
+                <img src="img/loca_go/locago-intro@2x.jpg" alt="locago-overview">
+              </picture>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -349,13 +367,16 @@
 
           <h3>Timeline</h3>
           <p>Feb. '19 - Sep. '19</p>
-        </div>        <!--inner wrapper-->
+        </div>
+        <!--inner wrapper-->
       </div>
       <!--id skillsandtools-->
       <div>
         <a id="button-top" class="button show"></a>
       </div>
     </div>
+    </div>
+    <!--id locago-->
   </main>
 
   <footer id="contact">
@@ -363,9 +384,9 @@
       <h2>Get in touch</h2>
       <p>
         It would be great to hear from you, please feel free to contact me!
-                I'm currently looking for my next exciting opportunity.
-         <br>Call: <a href="tel:+4915224307509">+49 152 24307509</a>
-        Prefer sending an email?</br>
+        <br>I'm currently looking for my next exciting opportunity.
+        <br>Call: <a href="tel:+4915224307509">+49 152 24307509</a>
+        <br>Prefer sending an email?
       </p>
       <div class="">
         <a href="mailto:annegret.kerschis@gmail.com" class="button contact">Email me</a>
@@ -390,11 +411,8 @@
     </div>
   </footer>
 
-  <script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"></script>
-<script src="js/scripts.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
 
 </body>
 
