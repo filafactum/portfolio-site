@@ -13,7 +13,6 @@ noch helleres grau #F6F6F8
 rot#C60021 #FA2742
 schwarz #373833
 */
-
 /* GENERAL=================
 ======================== */
 * {
@@ -21,7 +20,7 @@ schwarz #373833
 }
 
 body {
-  background-color: #f6f6f8;
+  background-color: #fff;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.6;
@@ -65,7 +64,7 @@ h2 {
   font-size: 1.75em;
   font-weight: 500;
   text-transform: uppercase;
-  color: #727272;
+  color: #07090f;
   background-color: inherit;
 }
 
@@ -131,7 +130,6 @@ a:active {
 .button:hover,
 .button:focus {
   box-shadow: 0 8px 14px rgba(0, 0, 0, 0.6);
-  font-weight: 600;
   color: #f6f6f8;
   background-color: #c60021;
   text-decoration: none;
@@ -236,18 +234,18 @@ img {
   width: 100%;
 }
 
-nav > ul {
+nav>ul {
   padding: 0;
   margin: 0;
 }
 
-nav > ul > li {
+nav>ul>li {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -303,33 +301,37 @@ ul.social {
   padding: 0 15px;
 }
 
-#hero {
-  background-color: #c60021;
-  padding: 20px 0;
+.heroindex {
+  position: relative;
+  text-align: center;
   display: inline-block;
-  text-transform: uppercase;
+}
+
+.heroindex span {
+  text-transform: none;
+  position: absolute;
   width: 100%;
   text-align: center;
   font-family: 'PT Serif', serif;
   font-style: italic;
-  color: #f6f6f8;
+  color: #C60021;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-#hero h1 {
+.heroindex h1 {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   margin: 0;
-  background-color: #c60021;
   color: inherit;
-}
-
-#hero span {
+  text-transform: uppercase;
   display: block;
 }
 
-#hero p {
-  text-transform: none;
-}
+.heroindex img {
+  text-align: center;
+  }
 
 #herovoxapp, #website {
   background-color: #c60021;
@@ -370,8 +372,19 @@ ul.social {
 
 #heroabout {
   padding: 0;
-  margin: 20px;
+  margin: 0;
+  background-color: #F6F6F8;
+  color: inherit;
 }
+
+#research img {
+  width: 100%;
+  }
+
+#voxappprototype img {
+  width: 100%;
+}
+
 
 .row {
   margin: 25px 0;
@@ -485,7 +498,15 @@ Medium devices (640px and larger)
   }
 
   #hero {
-    padding-top: 20px;
+    padding-top: 0;
+  }
+
+  .heroindex span {
+    max-width: 800px;
+  }
+
+  .heroindex h1 {
+    padding-bottom: 50px;
   }
 
   .logo {
@@ -504,11 +525,11 @@ Medium devices (640px and larger)
     margin-top: 4px;
   }
 
-  nav > ul {
+  nav>ul {
     margin: 1em 0;
   }
 
-  nav > ul > li {
+  nav>ul>li {
     display: inline-block;
   }
 
@@ -528,9 +549,6 @@ Medium devices (640px and larger)
     text-align: left;
   }
 
-  #voxappstudy {
-    text-align: left;
-  }
 
   #animation {
     text-align: left;
@@ -565,8 +583,12 @@ Large devices (1024px or larger)
     width: 100%;
   }
 
+  .heroindex {
+    font-size: 1.5em;
+  }
+
   h1 {
-    font-size: 3em;
+    font-size: 2em;
   }
 
   .col-lg-8 {
@@ -590,11 +612,25 @@ Large devices (1024px or larger)
     margin: 0 auto;
   }
 
+
+  #research img {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 0 200px;
+    display: block;
+}
+
+#voxappprototype img {
+  width: 100%;
+}
+
   nav {
     margin-top: 0;
   }
 
-  nav > ul {
+  nav>ul {
     margin: 8px 0 0;
   }
 
