@@ -21,7 +21,7 @@ schwarz #373833
 
 body {
   background-color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.6;
   color: #07090f;
@@ -41,7 +41,7 @@ header {
 }
 
 main {
-  padding-top: 40px;
+  padding-top: 53px;
 }
 
 footer {
@@ -119,7 +119,8 @@ a:active {
   color: #f6f6f8 !important;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 10px 12px;
+  font-size: 14px;
+  padding: 10px 23px;
   border-radius: 30px;
   opacity: 1;
   transition: all 0.3s;
@@ -142,6 +143,7 @@ a:active {
   text-transform: uppercase;
   text-decoration: none;
   border: 2px solid #c60021;
+  padding: 10px 50px;
 }
 
 .button.contact:hover {
@@ -154,14 +156,14 @@ a:active {
 #button-top {
   display: inline-block;
   text-align: center;
-  background-color: #c60021;
+  background-color: #e2dddd;
   color: inherit;
   text-decoration: none;
   opacity: 1;
-  width: 66px;
-  height: 46px;
+  width: 44px;
+  height: 44px;
   position: fixed;
-  bottom: 15px;
+  bottom: 40px;
   right: 15px;
   padding: 0 4px 4px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
@@ -173,8 +175,8 @@ a:active {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
-  font-size: 1.75em;
-  line-height: 50px;
+  font-size: 1.65em;
+  line-height: 45px;
 }
 
 #button-top.show {
@@ -192,7 +194,7 @@ a:active {
 }
 
 img.logo {
-  max-width: 100px;
+  max-width: 160px;
   padding-top: 0;
 }
 
@@ -214,8 +216,8 @@ img {
 
 .social {
   list-style-type: none;
-  padding: 0;
-  margin: 30px 0 15px;
+  padding: 0 0 40px;
+  margin: 30px 0 40px;
   display: block;
   text-align: center;
   width: 100%;
@@ -275,8 +277,8 @@ ul.social {
 
 .navtoggle li .icon {
   position: absolute;
-  right: 0;
-  top: 2px;
+  right: 11px;
+  top: 7px;
   font-size: 10px;
   padding-right: 0;
 }
@@ -299,37 +301,32 @@ ul.social {
   padding: 0 15px;
 }
 
-.heroindex {
-  position: relative;
-  text-align: center;
-  }
-
-.heroindex span {
-  text-transform: none;
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  font-family: 'PT Serif', serif;
-  font-style: italic;
-  color: #C60021;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+#hero {
+padding: 50px 0;
+  background: url(img/logos/header@2x.png);
 }
 
-.heroindex h1 {
+#hero .container {
+    text-align: center;
+  }
+
+#hero p {
+          font-family: 'PT Serif', serif;
+  font-style: italic;
+  color: #C60021 !important;
+  top: 50%;
+  left: 50%;
+}
+
+#hero h1 {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   margin: 0;
   color: inherit;
   text-transform: uppercase;
+  color: #C60021 !important;
   display: block;
 }
-
-.heroindex img {
-  width: 100%;
-  padding: 0;
-  }
 
 #herovoxapp, #website {
   background-color: #c60021;
@@ -368,11 +365,10 @@ ul.social {
   background-color: inherit;
 }
 
-#heroabout {
+#heroabout .about {
   padding: 0;
   margin: 0;
-  background-color: #F6F6F8;
-  color: inherit;
+  background-image: url(img/logos/About-me-foto.png);
 }
 
 #research img {
@@ -483,6 +479,10 @@ Medium devices (640px and larger)
     padding-top: 0;
   }
 
+.container {
+  padding: 0 25px;
+}
+
   .col-md-4 {
     width: 33.33%;
   }
@@ -495,11 +495,7 @@ Medium devices (640px and larger)
     margin-top: 0;
   }
 
-  #hero {
-    padding-top: 0;
-  }
-
-  .heroindex span {
+    .heroindex span {
     max-width: 700px;
     padding: 0 80px;
   }
@@ -515,17 +511,17 @@ Medium devices (640px and larger)
 
   img.logo {
     max-width: 250px;
-    margin-top: 10px;
+    margin-top: 0;
   }
 
   nav {
     float: right;
     width: auto;
-    margin-top: 4px;
+    margin-top: 10px;
   }
 
   nav>ul {
-    margin: 1em 0;
+    margin: 0;
   }
 
   nav>ul>li {
@@ -538,6 +534,10 @@ Medium devices (640px and larger)
 
   .navtoggle li:last-child {
     display: none;
+  }
+
+  .navtoggle.responsive li {
+      padding: 10px 0;
   }
 
   span {
