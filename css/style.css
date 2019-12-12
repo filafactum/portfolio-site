@@ -303,7 +303,7 @@ ul.social {
 
 #hero {
 padding: 50px 0;
-  background: url(img/logos/header@2x.png);
+  background-image: url(../img/logos/header.png);
 }
 
 #hero .container {
@@ -365,10 +365,10 @@ padding: 50px 0;
   background-color: inherit;
 }
 
-#heroabout .about {
-  padding: 0;
+#heroabout {
+  padding: 100px 0;
   margin: 0;
-  background-image: url(img/logos/About-me-foto.png);
+  background-image: url(../img/logos/About-me-foto.png);
 }
 
 #research img {
@@ -379,6 +379,9 @@ padding: 50px 0;
   width: 100%;
 }
 
+#mywork h2 {
+  text-align: center;
+}
 
 .row {
   margin: 25px 0;
@@ -582,12 +585,12 @@ Large devices (1024px or larger)
     width: 100%;
   }
 
-  .heroindex {
-    font-size: 1.5em;
-  }
-
-  .heroindex span {
-    padding: 0;
+  #hero {
+  max-width: 800px;
+  font-size: 18px;
+  text-align: center;
+  background-image: url(../img/logos/header@2x.png);
+    background-repeat: no-repeat;
   }
 
   h1 {
