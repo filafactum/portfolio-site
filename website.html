@@ -18,17 +18,18 @@
     <div class="container">
       <div class="navtoggle" id="myNavtoggle">
         <a href="index.html">
-        <img src="img/logos/Logo.png" class="logo" alt="my logo">
+          <img src="img/logos/Logo.png" class="logo" alt="my logo">
         </a>
-      <nav>
-        <ul class="bordersout">
-          <li><a href="index.html">work</a></li>
-          <li><a href="about.html">about</a></li>
-          <li><a href="#contact" onclick="menuToggle()">contact</a></li>
-          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-        </ul>
-      </nav>
-    </div><!--navtoggle-->
+        <nav>
+          <ul class="bordersout">
+            <li><a href="index.html">work</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="#contact" onclick="menuToggle()">contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+      <!--navtoggle-->
     </div>
   </header>
 
@@ -37,8 +38,14 @@
     <div>
       <div id="website">
         <h1>portfolio website<br>- case study -</h1>
-        </div>
-        <div class="container">
+      </div>
+      <div class="container">
+        <picture>
+          <source srcset="img/portfolio/portfolio-overview.png" media="(max-width:767px)">
+          <img src="img/portfolio/portfolio-overview@2x.png" alt="screenshot portfolio site">
+        </picture>
+      </div>
+      <div class="container">
         <h2>Context and challenge</h2>
         <h3>Purpose</h3>
         <p>
@@ -48,63 +55,92 @@
         <p>
           I was in charge of producing the content of the site and writing the code for the site itself with HTML5, CSS3 and JavaScript. After creating the site I tested it with five users and implemented changes according to user feedback.
         </p>
-        <h3>Timeline</h3>
-        <p>09/19-11/19</p>
-        <h3>Tools</h3>
-        <ul>
-          <li>Atom</li>
-          <li>GitHub Desktop/online platform</li>
-          <li>W3 validator</li>
-          <li>Color checker by www.accessible-colors.com</li>
-          <li>GoogleFonts API</li>
-          <li>FontAwesome</li>
-          <li>Linter-stylelint</li>
-          <li>linter-htmllint</li>
-          <li>Linter-js-standard</li>
-        </ul>
+
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Timeline</h3>
+            <p>09/19-11/19</p>
+          </div>
+
+          <div class="col-md-6">
+            <h3>Tools</h3>
+            <ul>
+              <li>Atom</li>
+              <li>GitHub Desktop/online platform</li>
+              <li>W3 validator</li>
+              <li>Color checker by www.accessible-colors.com</li>
+              <li>GoogleFonts API</li>
+              <li>FontAwesome</li>
+              <li>Linter-stylelint</li>
+              <li>linter-htmllint</li>
+              <li>Linter-js-standard</li>
+            </ul>
+          </div>
+        </div>
+
         <h2>Problem</h2>
         <p>
-          I want to work as a UX Designer/ Front-end developer and therefore need an online presence to showcase my projects. This way, I can present my work to my future employers, potential clients and coworkers. Since it’s very likely that I will be judged by the quality of the website, it had to be of high quality. It had to follow industry-standard systems, using responsive media queries, implementation of a CSS-stylesheet and JavaScript libraries. It had to pass W3C validation and work in all modern browsers, in all viewport sizes and with keyboard, mouse and touch inputs. 
-</p>
-<h2>Goal</h2>
-<p>
-Build a site with the above objectives and gain online traffic to the site.
-</p>
+          I want to work as a UX Designer/ Front-end developer and therefore need an online presence to showcase my projects. This way, I can present my work to my future employers, potential clients and coworkers. Since it’s very likely that I will
+          be judged by the quality of the website, it had to be of high quality. It had to follow industry-standard systems, using responsive media queries, implementation of a CSS-stylesheet and JavaScript libraries. It had to pass W3C validation
+          and work in all modern browsers, in all viewport sizes and with keyboard, mouse and touch inputs. 
+        </p>
+        <h2>Goal</h2>
+        <p>
+          Build a site with the above objectives and gain online traffic to the site.
+        </p>
       </div>
-    <div class="container">
-      <h2>Process and Insights</h2>
-      <h3>Research</h3>
-      <p>
-        As first step I conducted a research on other professional UX portfolios to see how other designers present their work and content and which best practices and conventions would be appropriate to showcase the projects I worked on. Then I created a table of content with all the projects I wanted to show. These would not only be UX-related. To show the full scope of my design capabilities, I decided to also show pieces from my previous experiences as a textile designer and artist.
-</p>
-<h3>Design</h3>
-<p>
-  The whole project was targeted with a mobile-first approach using media queries to define the breakpoints. To structure the content across different viewports (mobile, tablet and desktop), I laid out wireframes for every screen size I wanted to support. This way I could easily organize the site content into rows/columns, determine image sizes, text copy, etc. I developed a visual style beforehand: define the colors I wanted to use, the styling of buttons, fonts, etc. Then I started to write out the basic structure in an HTML-document and defined all styles in a CSS stylesheet to ensure consistent formatting of all visual elements. To enhance the user experience and provide more comfort in using my site I added interactive elements with JavaScript. For example a scroll-to-top button makes it easier to browse loads of content and interactive buttons provoke a CTA.
-</p>
-<h3>Testing</h3>
-<p>To discover possible errors in navigation and content, I conducted a user test with five participants. I developed a testing protocol with four scenarios and open-ended questions. This way I was able to detect some misleading and incomplete information such as a missing full name and missing underlining to help declare links. All errors were rated according to Jakob Nielsens severity rating scale. A list of recommendations for future iteration was compiled and will be worked off step by step
-</p>
-<h2>Solution</h2>
-<p>
-  By employing industry standards from basic site structure in my HTML document to using code linters for debugging the code, I set up an responsive webapplication that demonstrates my design skills as well as my knowledge of coding a website. The site meets AA accessability standards, can be viewed in all major browsers (Chrome, Opera, Safari, Firefoy & Edge) and is optimized for use on all common device sizes. My own portfolio site can be used by fellow designers, hiring managers and new network contacts to learn about me and my work. 
-</p>
-  <div class="container">
-        <picture>
-      <source srcset="img/portfolio/bsp-1.png" media="(max-width:767px)">
-      <img src="img/portfolio/bsp-1@2x.png" alt="examples screens">
-    </picture>
-  </div>
-
-    </div>
-    </div>
-
-
+      <div class="container">
+        <h2>Process and Insights</h2>
+        <h3>Research</h3>
+        <p>
+          As first step I conducted a research on other professional UX portfolios to see how other designers present their work and content and which best practices and conventions would be appropriate to showcase the projects I worked on. Then I
+          created a table of content with all the projects I wanted to show. These would not only be UX-related. To show the full scope of my design capabilities, I decided to also show pieces from my previous experiences as a textile designer and
+          artist.
+        </p>
+        <h3>Design</h3>
+        <p>
+          The whole project was targeted with a mobile-first approach using media queries to define the breakpoints. To structure the content across different viewports (mobile, tablet and desktop), I laid out wireframes for every screen size I
+          wanted to support. This way I could easily organize the site content into rows/columns, determine image sizes, text copy, etc. I developed a visual style beforehand: define the colors I wanted to use, the styling of buttons, fonts, etc.
+          Then I started to write out the basic structure in an HTML-document and defined all styles in a CSS stylesheet to ensure consistent formatting of all visual elements. To enhance the user experience and provide more comfort in using my site
+          I added interactive elements with JavaScript. For example a scroll-to-top button makes it easier to browse loads of content and interactive buttons provoke a CTA.
+        </p>
+        <div class="container">
+          <picture>
+            <source srcset="img/portfolio/bsp-2.png" media="(max-width:767px)">
+            <img src="img/portfolio/bsp-2@2x.png" alt="examples screens">
+          </picture>
         </div>
-      </div><!--skillsandtools-->
-      <div>
-        <a id="button-top" class="button show"></a>
+        <h3>Testing</h3>
+        <p>To discover possible errors in navigation and content, I conducted a user test with five participants. I developed a testing protocol with four scenarios and open-ended questions. This way I was able to detect some misleading and
+          incomplete information such as a missing full name and missing underlining to help declare links. All errors were rated according to Jakob Nielsens severity rating scale. A list of recommendations for future iteration was compiled and will
+          be worked off step by step
+        </p>
+
+        <h2>Solution</h2>
+        <p>
+          By employing industry standards from basic site structure in my HTML document to using code linters for debugging the code, I set up an responsive webapplication that demonstrates my design skills as well as my knowledge of coding a
+          website. The site meets AA accessability standards, can be viewed in all major browsers (Chrome, Opera, Safari, Firefoy & Edge) and is optimized for use on all common device sizes. My own portfolio site can be used by fellow designers,
+          hiring managers and new network contacts to learn about me and my work. 
+        </p>
+        <div class="container">
+          <picture>
+            <source srcset="img/portfolio/bsp-4.png" media="(max-width:767px)">
+            <img src="img/portfolio/bsp-4@2x.png" alt="examples screens">
+          </picture>
+        </div>
+
+      </div>
     </div>
-    </div><!--wrapper-->
+
+
+    </div>
+    </div>
+    <!--skillsandtools-->
+    <div>
+      <a id="button-top" class="button show"></a>
+    </div>
+    </div>
+    <!--wrapper-->
   </main>
 
   <footer id="contact">
@@ -112,8 +148,8 @@ Build a site with the above objectives and gain online traffic to the site.
       <h2>Get in touch</h2>
       <p>
         It would be great to hear from you, please feel free to contact me!
-                I'm currently looking for my next exciting opportunity.
-         <br>Call: <a href="tel:+4915224307509">+49 152 24307509</a>
+        I'm currently looking for my next exciting opportunity.
+        <br>Call: <a href="tel:+4915224307509">+49 152 24307509</a>
         Prefer sending an email?
       </p>
       <div class="">
@@ -139,11 +175,8 @@ Build a site with the above objectives and gain online traffic to the site.
     </div>
   </footer>
 
-  <script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"></script>
-<script src="js/scripts.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
 
 </body>
 
