@@ -156,7 +156,7 @@ a:active {
 #button-top {
   display: inline-block;
   text-align: center;
-  background-color: #e2dddd;
+  background-color: #E3E3E3;
   color: inherit;
   text-decoration: none;
   opacity: 1;
@@ -302,7 +302,7 @@ ul.social {
 }
 
 #hero {
-padding: 50px 0;
+padding: 40px 0;
   background-image: url(../img/logos/header.png);
 }
 
@@ -316,7 +316,7 @@ padding: 50px 0;
   color: #C60021 !important;
   top: 50%;
   left: 50%;
-}
+  }
 
 #hero h1 {
   font-family: 'Montserrat', sans-serif;
@@ -366,10 +366,45 @@ padding: 50px 0;
 }
 
 #heroabout {
-  padding: 100px 0;
-  margin: 0;
-  background-image: url(../img/logos/About-me-foto.png);
+  padding: 150px 0;
+  background: url(../img/logos/About-me-foto.png);
+  background-position: right center;
+  position: relative;
 }
+
+#heroabout .container {
+  padding: 25px;
+  }
+
+#heroabout h1 {
+    text-align: left;
+        margin: 0;
+    padding: 0;
+    bottom: 50px;
+    font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+    color: #e2dddd;
+    display: block;
+    position: absolute;
+}
+
+#hero {
+padding: 40px 0;
+  background: url(../img/logos/header.png);
+}
+
+#hero .container {
+    text-align: center;
+  }
+
+#hero p {
+          font-family: 'PT Serif', serif;
+  font-style: italic;
+  color: #C60021 !important;
+  top: 50%;
+  left: 50%;
+  }
+
 
 #research img {
   width: 100%;
@@ -498,13 +533,18 @@ Medium devices (640px and larger)
     margin-top: 0;
   }
 
-    .heroindex span {
-    max-width: 700px;
-    padding: 0 80px;
+  #hero {
+    font-size: 18px;
+  text-align: center;
+  background-image: url(../img/logos/header@2x.png);
+    background-repeat: no-repeat;
   }
 
-  .heroindex h1 {
-    padding-bottom: 50px;
+  #heroabout {
+    padding: 320px 0;
+    background: url(../img/logos/About-me-foto@2x.png);
+    background-position: right center;
+    background-repeat: no-repeat;
   }
 
   .logo {
@@ -585,15 +625,18 @@ Large devices (1024px or larger)
     width: 100%;
   }
 
-  #hero {
-  max-width: 800px;
-  font-size: 18px;
+#hero .container {
+  padding: 170px 50px;
   text-align: center;
-  background-image: url(../img/logos/header@2x.png);
-    background-repeat: no-repeat;
+}
+
+#hero p {
+  max-width: 600px;
+  margin: 0 50px;
+  display: inline-block;
   }
 
-  h1 {
+    h1 {
     font-size: 2em;
   }
 
