@@ -637,6 +637,10 @@ Large devices (1024px or larger)
   display: inline-block;
   }
 
+#heroabout {
+  background-position: center;
+}
+
     h1 {
     font-size: 2em;
   }
