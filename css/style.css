@@ -538,6 +538,7 @@ Medium devices (640px and larger)
     font-size: 18px;
   text-align: center;
   background-image: url(../img/logos/header@2x.png);
+  background-size: cover;
     background-repeat: no-repeat;
   }
 
@@ -625,6 +626,10 @@ Large devices (1024px or larger)
     display: inline-block;
     width: 100%;
   }
+
+#hero {
+  background-size: cover;
+}
 
 #hero .container {
   padding: 170px 50px;
